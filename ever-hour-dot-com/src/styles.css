@@ -1,0 +1,66 @@
+.App {
+    font-family: geomanist-regular, sans-serif;
+    text-align: center;
+  }
+  .navbar > div > a:hover {
+    color: black;
+    font-weight: 550;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .loginBox {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4rem;
+    margin-top: 2rem;
+  }
+  #navbut:hover{
+    background-color: #57bb71;
+  }
+  .loginBox > div:nth-child(1)>form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    /* border: 1px solid blue; */
+  }
+  .loginBox > div:nth-child(1)>form>button {
+    height: 3rem;
+    width: 100%;
+    margin: auto;
+    background: white;
+    border:1px solid grey;
+    color:grey;
+    font-weight: 100;
+  }
+  .loginBox > div:nth-child(1)>form>input {
+    height: 3rem;
+    width: 100%;
+    border: 1px solid grey;
+  }
+  .loginBox > div:nth-child(2) { 
+    padding: 0px;
+ }
+ #login-button{
+    height: 55px;
+    background-color: #57bb71;
+    color: white;
+    width: max-content;
+    display: inline-flex;
+    margin: auto;
+    padding: 0 4rem;
+    margin-top: 10px;
+ }
+ #signup-button{
+    height: 55px;
+    background-color: #57bb71;
+    color: white;
+    width: max-content;
+    display: inline-flex;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 15px;   
+ }
+ .button-hover:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ }
