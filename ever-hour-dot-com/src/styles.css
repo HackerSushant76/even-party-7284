@@ -1,0 +1,27 @@
+.App {
+    font-family: geomanist-regular, sans-serif;
+    text-align: center;
+  }
+  .navbar > div > a:hover {
+    color: black;
+    font-weight: 550;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .loginBox {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 4rem;
+    margin-top: 2rem;
+  }
+  .loginBox > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid blue; */
+  }
+  .loginBox > div:nth-child(2) {
+    /* border: 1px solid blue; */
+  }
+  
