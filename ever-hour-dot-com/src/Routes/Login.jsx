@@ -31,7 +31,8 @@ import { Navigate, useNavigate } from "react-router-dom";
       <Box  w="70%"  m="auto" mt="2rem">
         <Box>
           <Heading size="2xl" fontWeight="semibold">Log in to Everhour</Heading>
-          <Text color="grey" fontSize="22px" m="1rem">
+          <br />
+          <Text className="text">
             Using the former version of Everhour? Please login here
           </Text>
         </Box>
