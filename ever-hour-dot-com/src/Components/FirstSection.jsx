@@ -9,7 +9,7 @@ export function FirstSection(){
         console.log(email)
     }
     return (
-        <Box w="70%" m="auto" mt="2rem">
+        <Box w="70%" m="auto" mt="2rem" mb="5rem">
             <Box display="flex" w="max-content" m="auto" alignItems="center">
                 <AiTwotoneStar color="rgb(255, 219, 88)" size="22px"/>
                 <AiTwotoneStar color="rgb(255, 219, 88)" size="22px"/>
