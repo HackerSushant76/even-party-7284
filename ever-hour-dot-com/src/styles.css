@@ -61,6 +61,20 @@
     padding: 0 50px;
     margin-top: 15px;   
  }
+ #try-button{
+    height: 48px;
+    background-color: #57bb71;
+    color: white;
+    width: max-content;
+    display: inline-flex;
+    margin: auto;
+    margin-left: 20px;
+    padding: 0 50px;
+ }
  .button-hover:hover{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ }
+ .text{
+    color:grey;
+    font-size:22px ;
  }
