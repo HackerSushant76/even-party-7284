@@ -78,3 +78,17 @@
     color:grey;
     font-size:22px ;
  }
+ .timer{
+  height: 16px;
+  width:180px;
+  background-color: rgb(115, 16, 122);
+  animation: move 3s linear infinite;
+}
+@keyframes move{
+  0%{
+      width:0px;
+  }
+  100%{
+      width: 180px;
+  }
+}
