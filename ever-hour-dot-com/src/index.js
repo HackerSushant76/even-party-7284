@@ -3,6 +3,7 @@ import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import {  AppContextProvider } from './Context/AppContext';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
@@ -14,7 +15,9 @@ root.render(
     <ColorModeScript />
     <BrowserRouter>
       <ChakraProvider>
+        <AppContextProvider>
         <App />
+        </AppContextProvider>
       </ChakraProvider>
     </BrowserRouter>
   </StrictMode>

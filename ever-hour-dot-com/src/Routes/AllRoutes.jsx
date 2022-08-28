@@ -1,6 +1,9 @@
+import { Heading } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
+import { Demo } from "./Demo";
 import { Home } from "./Home";
 import { Login } from "./Login";
+import { Pricing } from "./Pricing";
 import { Signup } from "./Signup";
 
 export function AllRoutes() {
@@ -9,9 +12,9 @@ export function AllRoutes() {
       <Route path="/" element={<Home/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup/>} />
-      <Route path="/pricing" element={<h1>Pricing</h1>} />
-      <Route path="/demo" element={<h1>Demo</h1>} />
-      <Route path="/integrations" element={<h1>integrations</h1>} />
+      <Route path="/pricing" element={<Pricing/>} />
+      <Route path="/demo" element={<Demo/>} />
+      <Route path="/integrations" element={<Heading mt={50} mb={100}>Integrations</Heading>} />
     </Routes>
   );
 }

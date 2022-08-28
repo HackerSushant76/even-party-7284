@@ -39,7 +39,7 @@ export function FirstSection() {
           placeholder="Work email..."
           onChange={e => setEmail(e.target.value)}
         />
-        <Button id="try-button" onClick={handleSubmit}>
+        <Button id="try-button" className="button-hover" onClick={handleSubmit}>
           Try free
         </Button>
         <Text color="grey" mt="5px">

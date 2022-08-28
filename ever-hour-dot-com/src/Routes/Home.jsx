@@ -1,4 +1,5 @@
 import { Box } from "@chakra-ui/react";
+import { FifthSection } from "../Components/FifthSection";
 import { FirstSection } from "../Components/FirstSection";
 import { FourthSection } from "../Components/FourthSection";
 import { SecondSection } from "../Components/SecondSection";
@@ -14,6 +15,8 @@ export function Home(){
             <ThirdSection/>
             <br />
             <FourthSection/>
+            <br />
+            <FifthSection/>
         </Box>
     )
 }
