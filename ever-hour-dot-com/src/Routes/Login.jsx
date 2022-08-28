@@ -6,11 +6,13 @@ import {
     Input,
     Text
   } from "@chakra-ui/react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import { AppContext } from "../Context/AppContext";
   
   export function Login() {
     const navigate = useNavigate()
+    const {auth, handleLogin, handleLogout} = useContext(AppContext)
     const [loginData, setLoginData] = useState({
         email:"",
         password:""
@@ -24,6 +26,16 @@ import { Navigate, useNavigate } from "react-router-dom";
     }
     const handleSubmit =(e)=>{
         e.preventDefault()
+        fetch("https://reqres.in/api/login",{
+          method:"POST",
+          headers:{"Content-Type" : "application/json"},
+          body: JSON.stringify(loginData)
+        })
+        .then(res => res.json())
+        .then(res => {
+          console.log(res.token)
+          handleLogin(res.token)
+        })
         navigate("/")
     }
     console.log(loginData)

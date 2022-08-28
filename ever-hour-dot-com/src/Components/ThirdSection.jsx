@@ -26,7 +26,7 @@ const slides = [
 export function ThirdSection() {
   return (
     <Box>
-      <Box w="50%" m="auto">
+      <Box w="50%" m="auto" mt="5rem">
         <Heading  fontWeight="600" lineHeight="45px">
           Track time and watch progress inside the most popular apps
         </Heading>
