@@ -15,7 +15,7 @@ export function Navbar() {
       className="navbar"
     >
       <Box display="flex" gap="3rem" id="navbox1" alignItems="center">
-        <NavLink to="/"><Image src= {logo_link} w="110px"/></NavLink>
+        <NavLink to="/"><Image src= "everhour-fav.png" w="110px"/></NavLink>
         <NavLink to="/integrations">Integrations</NavLink>
         <NavLink to="/pricing">Pricing</NavLink>
         <NavLink to="/demo">Demo</NavLink>

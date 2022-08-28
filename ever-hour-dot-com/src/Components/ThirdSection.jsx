@@ -1,5 +1,7 @@
 import { Avatar, Box, Heading, Image, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { Boxes } from './Boxes';
+import { ImageSlider } from './ImageSlider';
 
 const images = [
   { title: 'Asana', url: '/Asana.png' },
@@ -11,7 +13,16 @@ const images = [
   { title: 'Monday', url: '/monday.png' },
   {title: "Notion" ,url:"/notion.png" },
 ];
-
+const slides = [
+  { url: "asana-primary.webp", title: "asana" },
+  { url: "trello-primary.webp", title: "trello" },
+  { url: "basecamp-primary.webp", title: "basecamp" },
+  { url: "jira-primary.webp", title: "jira" },
+  { url: "github-primary.webp", title: "github" },
+  { url: "clickup-primary.webp", title: "github" },
+  { url: "monday-primary.webp", title: "monday" },
+  { url: "notion-primary.webp", title: "notion" }
+];
 export function ThirdSection() {
   return (
     <Box>
@@ -26,9 +37,8 @@ export function ThirdSection() {
             <Text fontSize="25px">{elem.title}</Text>
         </Box>)}
       </Box>
-      <Box display="flex" >
-        <Image src="/asana-primary.webp" display="inline-flex" m="auto"/>
-      </Box>
+      <ImageSlider slides={slides}/>
+      <Boxes/>
     </Box>
   );
 }
