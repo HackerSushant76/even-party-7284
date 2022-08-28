@@ -1,8 +1,8 @@
 import { Box, Image } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import {GiStopwatch} from "react-icons/gi"
-import {RiMoneyDollarBoxFill} from "react-icons/ri"
+import { GiStopwatch } from 'react-icons/gi';
+import { RiMoneyDollarBoxFill } from 'react-icons/ri';
 
 const images = [
   '/Time tracking.png',
@@ -17,7 +17,6 @@ const menus = [
   {
     title: 'Time tracking',
     desc: 'Easy-to-use time tracker. Know the time spent on tasks, hours of work, and breaks for each employee',
-
   },
   {
     title: 'Billing and budgeting',
@@ -51,23 +50,47 @@ export function SecondSection() {
         i = 0;
       }
       setIndex(i);
-      //   setMenu(menus[i]);
       setImgUrl(images[i]);
       i++;
-    }, 2000);
+    }, 3000);
     return () => clearInterval(id);
   }, [i]);
 
   return (
-    <Box display="flex"  justifyContent="space-evenly" ml={30} mt="5rem" mb="5rem">
-      <Box display="flex" gap="40px" flexDirection="column" textAlign="left" padding="1rem">
+    <Box
+      display="flex"
+      justifyContent="space-evenly"
+      ml={30}
+      mt="5rem"
+      mb="5rem"
+    >
+      <Box
+        display="flex"
+        gap="40px"
+        flexDirection="column"
+        textAlign="left"
+        padding="1rem"
+      >
         {menus.map((elem, ind) => (
-          <div style={ind === index ? { backgroundColor: "#F0FAF5", width: "300px",padding:"1rem", textAlign:"left"} : {}}>
+          <div
+            style={
+              ind === index
+                ? {
+                    backgroundColor: '#F0FAF5',
+                    width: '300px',
+                    padding: '1rem',
+                    textAlign: 'left',
+                  }
+                : {}
+            }
+            // className={ind === index ? 'timer' : null}
+          >
             <Box fontSize="18px" fontWeight="bold">
-                {/* <GiStopwatch fill='skyblue'/> */}
-                {/* <RiMoneyDollarBoxFill color='green'/> */}
-                {elem.title}</Box>
-            <Box >{ind === index ? elem.desc : null}</Box>
+              {/* <GiStopwatch fill='skyblue'/> */}
+              {/* <RiMoneyDollarBoxFill color='green'/> */}
+              {elem.title}
+            </Box>
+            <Box>{ind === index ? elem.desc : null}</Box>
           </div>
         ))}
       </Box>
